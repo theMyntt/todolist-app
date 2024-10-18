@@ -10,12 +10,14 @@ import SwiftUI
 struct AddTodo: View {
     @State var todoTitle = ""
     
+    @EnvironmentObject var viewModel: TodoViewModel
+    
     var body: some View {
         ScrollView {
             TextField("Type something here...", text: $todoTitle)
                 .padding()
             Button(action: {
-                
+                viewModel.newItem(title: todoTitle)
             }, label: {
                 Text("Save")
                     .padding()
