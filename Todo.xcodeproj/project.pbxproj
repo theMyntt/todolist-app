@@ -11,6 +11,7 @@
 		9179C7302CC30D2100A386D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9179C72F2CC30D2100A386D8 /* Assets.xcassets */; };
 		9179C7332CC30D2100A386D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9179C7322CC30D2100A386D8 /* Preview Assets.xcassets */; };
 		9179C7572CC30F0F00A386D8 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179C7562CC30F0F00A386D8 /* ListView.swift */; };
+		9179C7592CC3157500A386D8 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9179C7582CC3157500A386D8 /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		9179C7382CC30D2200A386D8 /* TodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179C7422CC30D2200A386D8 /* TodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9179C7562CC30F0F00A386D8 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		9179C7582CC3157500A386D8 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				9179C7562CC30F0F00A386D8 /* ListView.swift */,
+				9179C7582CC3157500A386D8 /* ItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9179C72C2CC30D1E00A386D8 /* TodoApp.swift in Sources */,
+				9179C7592CC3157500A386D8 /* ItemView.swift in Sources */,
 				9179C7572CC30F0F00A386D8 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
