@@ -19,7 +19,8 @@ struct ListView: View {
             ForEach(items) { item in
                 ItemView(item: item)
             }
-            .onDelete(perform: deleteItem) 
+            .onDelete(perform: deleteItem)
+            .onMove(perform: moveItem)
         }
         .navigationTitle("Todo List 📝")
         .navigationBarItems(
@@ -29,6 +30,10 @@ struct ListView: View {
     
     func deleteItem(index: IndexSet) {
         items.remove(atOffsets: index)
+    }
+    
+    func moveItem(from: IndexSet, to: Int) {
+        items.move(fromOffsets: from, toOffset: to)
     }
 }
 
