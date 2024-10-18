@@ -15,7 +15,7 @@ class TodoViewModel: ObservableObject {
     }
     
     func seedItems() {
-        var newItems: [TodoModel] = [
+        let newItems: [TodoModel] = [
             TodoModel(title: "First element", isCompleted: false),
             TodoModel(title: "Second element", isCompleted: true),
             TodoModel(title: "Third element", isCompleted: true)
@@ -32,8 +32,10 @@ class TodoViewModel: ObservableObject {
     }
     
     func newItem(title: String) {
-        var item: TodoModel = TodoModel(title: title, isCompleted: false)
+        let item: TodoModel = TodoModel(title: title, isCompleted: false)
         
-        items.append(item)
+        if (title != "") {
+            items.append(item)
+        }
     }
 }
