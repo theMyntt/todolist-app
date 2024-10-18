@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ItemView: View {
-    let title: String
+    let item: TodoModel
     
     var body: some View {
         HStack {
-            Image(systemName: "checkmark.circle")
-            Text(title)
+            Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
+                .foregroundColor(item.isCompleted ? .green : .red)
+            Text(item.title)
             Spacer()
         }
+        .font(.title2)
+        .padding(.vertical, 8)
     }
 }
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ItemView(title: "My Item")
+        ItemView(item: TodoModel(title: "First element", isCompleted: false))
     }
 }
