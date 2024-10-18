@@ -10,6 +10,7 @@ import SwiftUI
 struct AddTodo: View {
     @State var todoTitle = ""
     
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var viewModel: TodoViewModel
     
     var body: some View {
@@ -18,6 +19,7 @@ struct AddTodo: View {
                 .padding()
             Button(action: {
                 viewModel.newItem(title: todoTitle)
+                presentationMode.wrappedValue.dismiss()
             }, label: {
                 Text("Save")
                     .padding()
