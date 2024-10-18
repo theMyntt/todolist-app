@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct TodoApp: App {
+    @StateObject var listViewModel: TodoViewModel = TodoViewModel()
+    
     var body: some Scene {
         WindowGroup {
             NavigationView {
